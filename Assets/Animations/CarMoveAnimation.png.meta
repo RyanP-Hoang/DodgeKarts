@@ -106,6 +106,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -113,10 +126,10 @@ TextureImporter:
       name: CarMoveAnimation_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 3
-        width: 10
-        height: 6
+        x: 0
+        y: 0
+        width: 75
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +147,10 @@ TextureImporter:
       name: CarMoveAnimation_1
       rect:
         serializedVersion: 2
-        x: 13
+        x: 75
         y: 0
-        width: 60
-        height: 25
+        width: 75
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +168,10 @@ TextureImporter:
       name: CarMoveAnimation_2
       rect:
         serializedVersion: 2
-        x: 77
-        y: 4
-        width: 6
-        height: 5
+        x: 150
+        y: 0
+        width: 75
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,34 +186,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarMoveAnimation_3
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 4
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de8d4c7dc72cc254490731be6a4eb19a
-      internalID: 1322073095
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: CarMoveAnimation_4
       rect:
         serializedVersion: 2
-        x: 88
+        x: 300
         y: 0
-        width: 60
-        height: 25
+        width: 75
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +210,10 @@ TextureImporter:
       name: CarMoveAnimation_5
       rect:
         serializedVersion: 2
-        x: 150
-        y: 3
-        width: 10
-        height: 5
+        x: 375
+        y: 0
+        width: 75
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,54 +228,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarMoveAnimation_6
+      name: CarMoveAnimation_3
       rect:
         serializedVersion: 2
-        x: 163
+        x: 225
         y: 0
-        width: 60
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f06daf4548b9314389bd8171a5f5805
-      internalID: 89362771
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CarMoveAnimation_7
-      rect:
-        serializedVersion: 2
-        x: 228
-        y: 3
-        width: 10
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e18fd79288c557543944960871956657
-      internalID: 2072140150
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CarMoveAnimation_8
-      rect:
-        serializedVersion: 2
-        x: 238
-        y: 0
-        width: 60
+        width: 75
         height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -292,113 +242,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d3c9428c1d75384391e965a2d49f020
-      internalID: 74609639
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CarMoveAnimation_9
-      rect:
-        serializedVersion: 2
-        x: 302
-        y: 4
-        width: 6
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13feea8016acc8b4ea3ba8279725ff2c
-      internalID: 987379235
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CarMoveAnimation_10
-      rect:
-        serializedVersion: 2
-        x: 309
-        y: 4
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 10ecf100548825c47a444c1bc8e549b5
-      internalID: 999045199
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CarMoveAnimation_11
-      rect:
-        serializedVersion: 2
-        x: 313
-        y: 0
-        width: 60
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e484d4d77c511a544ae25349cca622d5
-      internalID: 1005641417
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CarMoveAnimation_12
-      rect:
-        serializedVersion: 2
-        x: 375
-        y: 3
-        width: 10
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 10484ec14227ca04cb70d4444ee107d6
-      internalID: -866227471
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CarMoveAnimation_13
-      rect:
-        serializedVersion: 2
-        x: 388
-        y: 0
-        width: 60
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e19cf8c2bd1680e419f2564566039893
-      internalID: 1322055150
+      spriteID: f3d341c80ec25744d9ce873b3c17484f
+      internalID: 1322073095
       vertices: []
       indices: 
       edges: []
@@ -416,18 +261,10 @@ TextureImporter:
     nameFileIdTable:
       CarMoveAnimation_0: -1943165249
       CarMoveAnimation_1: 129278362
-      CarMoveAnimation_10: 999045199
-      CarMoveAnimation_11: 1005641417
-      CarMoveAnimation_12: -866227471
-      CarMoveAnimation_13: 1322055150
       CarMoveAnimation_2: -1792318294
       CarMoveAnimation_3: 1322073095
       CarMoveAnimation_4: -311495603
       CarMoveAnimation_5: -135983880
-      CarMoveAnimation_6: 89362771
-      CarMoveAnimation_7: 2072140150
-      CarMoveAnimation_8: 74609639
-      CarMoveAnimation_9: 987379235
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

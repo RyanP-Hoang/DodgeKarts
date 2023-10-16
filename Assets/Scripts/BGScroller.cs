@@ -1,20 +1,32 @@
+using System;
 using UnityEngine;
 
 public class BGScroller : MonoBehaviour
 {
-    [Range(-1f, 10f)]
     public float scrollSpeed = 5f;
     private float offset;
-    private Material mat;
+    
+    public int length;
 
-    void Start()
+
+    private Vector3 startPos;
+    
+
+    private void Start()
     {
-        mat = GetComponent<Renderer>().material;
+
+        startPos = transform.position;
+        scrollSpeed *= -1f; // 
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        offset += (Time.deltaTime * scrollSpeed) / 10f;
-        mat.SetTextureOffset("_MainTex", new Vector2(offset, 0));
+        offset = (Time.deltaTime * scrollSpeed) / 10f;
+        transform.Translate(new Vector3(offset, 0,0));
+        
+        if (transform.position.x <= -length)
+        {
+            transform.position = new Vector3(length,0,0);
+        }
     }
 }
