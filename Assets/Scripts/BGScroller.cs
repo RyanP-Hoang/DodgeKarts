@@ -16,7 +16,7 @@ public class BGScroller : MonoBehaviour
     {
 
         startPos = transform.position;
-        scrollSpeed *= -1f; // 
+        scrollSpeed *= -1f;
     }
 
     void FixedUpdate()
