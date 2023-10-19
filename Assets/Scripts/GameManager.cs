@@ -1,11 +1,17 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 
 public class GameManager : MonoBehaviour
 {
     public float slow = 10f;
+    public GameObject deathPopUp;
+    private int score;
+
+    private void Start()
+    {
+        score = 0;
+    }
 
     public void EndGame()
     {
@@ -17,11 +23,20 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f / slow;
         Time.fixedDeltaTime = Time.fixedDeltaTime / slow;
 
-        yield return new WaitForSeconds(1f / slow);
+        yield return new WaitForSeconds(1f/ slow);
+        Time.timeScale = 0;
+        deathPopUp.SetActive(true);
+        deathPopUp.GetComponent<GameOverUI>().SetValues(score, slow);
 
-        Time.timeScale = 1f;
-        Time.fixedDeltaTime = Time.fixedDeltaTime * slow;
+    }
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Obstacle") 
+        {
+
+            score++;
+        }
     }
 }

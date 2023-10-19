@@ -27,12 +27,23 @@ public class CarSpawner : MonoBehaviour
         timer = false;
         yield return new WaitForSeconds(waitTime);
 
-        int spawnThisMuch = (int)Random.Range(1, 3);
+        int spawnThisMuch = (int)Random.Range(1, spawnLocations.Length);
         bool[] spots = new bool[spawnLocations.Length];
 
         for (int i = 0; i < spawnThisMuch; i++)
         {// Randomly picks a bool to flip - Even if the spawn wants 3, it may not happen
-            spots[(int)Random.Range(0, spots.Length)] = true;
+            bool updated = false;
+            do
+            {
+                int temp = (int)Random.Range(0, spots.Length);
+                if (!spots[temp])
+                {
+                    spots[temp] = true;
+                    updated = true;
+                }
+            }
+            while (!updated);
+            
         }
 
         for (int i = 0; i < spots.Length; i++)
@@ -41,7 +52,6 @@ public class CarSpawner : MonoBehaviour
             {
                 GameObject obstacle = Instantiate(prefabs[Random.Range(0, prefabs.Length - 1)]); // Spawn From Prefab Array
                 obstacle.transform.position = spawnLocations[i].position; // move object to Spawn Location
-                obstacle.tag = "Obstacle";
             }
         }
         timer = true;

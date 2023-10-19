@@ -6,7 +6,7 @@ public class CarController : MonoBehaviour
 {
     Rigidbody2D rb;
     public float speed = 5f;
-    public float roadLanes = 4f;
+    public float roadLanes = 2.5f;
 
     void Start()
     {
@@ -25,11 +25,16 @@ public class CarController : MonoBehaviour
         rb.MovePosition(newPosition);
     }
 
-    void OnCollisionEnter2D(Collision2D col)
+ 
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (col.gameObject.CompareTag("Obstacle"))
+        if (collision.gameObject.tag == "Obstacle")
         {
             FindObjectOfType<GameManager>().EndGame();
         }
     }
+
+
+
 }
