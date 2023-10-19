@@ -8,11 +8,6 @@ public class CarController : MonoBehaviour
     public float speed = 5f;
     public float roadLanes = 4f;
 
-    //public int playerLane = 3;
-
-    public Collider2D startLine, finishLine;
-    public float startTime;
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -30,17 +25,8 @@ public class CarController : MonoBehaviour
         rb.MovePosition(newPosition);
     }
 
-
-    void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionEnter2D()
     {
-        if (other == startLine)
-        {
-            Debug.Log("start");
-            startTime = Time.time;
-        }
-        if (other == finishLine)
-        {
-            Debug.Log("stop|" + (Time.time - startTime).ToString());
-        }
+        FindObjectOfType<GameManager>().EndGame();
     }
 }

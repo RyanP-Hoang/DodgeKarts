@@ -9,9 +9,13 @@ public class CarSpawner : MonoBehaviour
     public float waitTime = 5;
     private bool timer;
 
-    void Update()
+    private void Start()
     {
+        timer = true;
+    }
 
+    private void Update()
+    {
         if (timer)
         {
             StartCoroutine(Spawner());
@@ -28,7 +32,7 @@ public class CarSpawner : MonoBehaviour
 
         for (int i = 0; i < spawnThisMuch; i++)
         {// Randomly picks a bool to flip - Even if the spawn wants 3, it may not happen
-            spots[(int)Random.Range(0, spots.Length - 1)] = true;
+            spots[(int)Random.Range(0, spots.Length)] = true;
         }
 
         for (int i = 0; i < spots.Length; i++)
