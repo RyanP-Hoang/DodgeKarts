@@ -41,6 +41,7 @@ public class CarSpawner : MonoBehaviour
             {
                 GameObject obstacle = Instantiate(prefabs[Random.Range(0, prefabs.Length - 1)]); // Spawn From Prefab Array
                 obstacle.transform.position = spawnLocations[i].position; // move object to Spawn Location
+                obstacle.tag = "Obstacle";
             }
         }
         timer = true;

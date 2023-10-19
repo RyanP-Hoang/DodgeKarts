@@ -25,8 +25,11 @@ public class CarController : MonoBehaviour
         rb.MovePosition(newPosition);
     }
 
-    void OnCollisionEnter2D()
+    void OnCollisionEnter2D(Collision2D col)
     {
-        FindObjectOfType<GameManager>().EndGame();
+        if (col.gameObject.CompareTag("Obstacle"))
+        {
+            FindObjectOfType<GameManager>().EndGame();
+        }
     }
 }
