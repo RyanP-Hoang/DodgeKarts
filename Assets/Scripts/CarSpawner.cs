@@ -6,7 +6,9 @@ public class CarSpawner : MonoBehaviour
 {
     public GameObject[] prefabs;
     public Transform[] spawnLocations;
-    public float waitTime = 5;
+    public Vector2 waitTime = new Vector2(2, 5);
+   
+    
     private bool timer;
 
     private void Start()
@@ -25,7 +27,7 @@ public class CarSpawner : MonoBehaviour
     private IEnumerator Spawner()
     {
         timer = false;
-        yield return new WaitForSeconds(waitTime);
+        yield return new WaitForSeconds(Random.Range(waitTime.x,waitTime.y));
 
         int spawnThisMuch = (int)Random.Range(1, spawnLocations.Length);
         bool[] spots = new bool[spawnLocations.Length];

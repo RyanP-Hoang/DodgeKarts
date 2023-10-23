@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6187910899496925036}
   - component: {fileID: -9147877140337756529}
   - component: {fileID: 7975298421545626382}
-  - component: {fileID: 8091752666324546064}
+  - component: {fileID: -2286768048508849429}
   m_Layer: 0
   m_Name: Car_0 4
   m_TagString: Obstacle
@@ -149,8 +149,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollSpeed: 5
---- !u!70 &8091752666324546064
-CapsuleCollider2D:
+--- !u!60 &-2286768048508849429
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -181,6 +181,22 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1, y: 0}
-  m_Size: {x: 2, y: 0.76}
-  m_Direction: 1
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.34375, y: 0.84375}
+    newSize: {x: 2.34375, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.671875, y: -0.296875}
+      - {x: -0.765625, y: 0.171875}
+      - {x: -0.265625, y: 0.265625}
+      - {x: 0.484375, y: 0.265625}
+      - {x: 1.046875, y: 0.078125}
+      - {x: 1.078125, y: -0.296875}
+  m_UseDelaunayMesh: 0
