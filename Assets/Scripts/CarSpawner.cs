@@ -14,6 +14,7 @@ public class CarSpawner : MonoBehaviour
     private void Start()
     {
         timer = true;
+        StartCoroutine(increaseDifficulty());
     }
 
     private void Update()
@@ -57,5 +58,18 @@ public class CarSpawner : MonoBehaviour
             }
         }
         timer = true;
+    }
+    
+
+    private IEnumerator increaseDifficulty()
+    {
+
+        yield return new WaitForSeconds(30);
+
+        waitTime.y -= 1;
+
+        yield return new WaitForSeconds(30);
+
+        waitTime.y -= 1;
     }
 }

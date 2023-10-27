@@ -20,9 +20,9 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Sedan_Yellow
+  m_Name: Truck_Purple 3
   m_Shader: {fileID: -6465566751694194690, guid: 3625303a344138846bba637fdb165f01, type: 3}
-  m_Parent: {fileID: 2100000, guid: ac017d2ce80935947ba3ee035a9224ed, type: 2}
+  m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -36,16 +36,32 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _ColorTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Emission:
-        m_Texture: {fileID: 2800000, guid: 48c51d1cd2216014aab4470635c3e7fa, type: 3}
+        m_Texture: {fileID: 2800000, guid: e2d5b167a4fbadf43a6521db2dd79fd1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 2b89fba12ca63f041862f44982aea693, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8c690012ad1c92246bbe276ed014fa55, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _Color: {r: 0.9700272, g: 1, b: 0, a: 1}
+    - _Color: {r: 0.23745102, g: 0.5525547, b: 0.6509434, a: 1}
   m_BuildTextureStacks: []
